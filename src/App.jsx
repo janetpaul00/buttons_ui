@@ -14,8 +14,16 @@ function App() {
         <Button> Default </Button>
         <Button variant="outline"> Outline </Button>
         <Button variant="text">Text</Button>
+        <Button disableShadow>No Shadow</Button>
         <Button disabled>Disabled</Button>
+        <Button variant="text" disabled>
+          Disabled text variant
+        </Button>
       </div>
+      <footer>
+        created by <span className="username">janetpaul00</span> -
+        devChallenges.io
+      </footer>
     </>
   );
 }

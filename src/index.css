@@ -31,6 +31,19 @@ h1 {
   font-weight: 300;
 }
 
+footer {
+  color: gray;
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+}
+
+.username {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
 .grid {
   padding-top: 40px;
   display: flex;
@@ -80,4 +93,15 @@ button.outline:focus {
 button.text:hover,
 button.text:focus {
   background-color: rgba(41, 98, 255, 0.1);
+}
+
+.disableShadow {
+  box-shadow: none;
+  background-color: #3d5afe;
+  color: white;
+}
+
+button.text:disabled {
+  background-color: none;
+  color: var(--default-button-hover);
 }

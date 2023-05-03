@@ -4,14 +4,16 @@ export default function Button({
   variant = "default",
   children,
   disabled = false,
+  disableShadow,
 }) {
-  console.log(variant);
-
   return (
-    <>
-      <button disabled={disabled} className={variant}>
-        {children}
-      </button>
-    </>
+    <button
+      disabled={disabled}
+      className={clsx(variant, {
+        disableShadow,
+      })}
+    >
+      {children}
+    </button>
   );
 }
